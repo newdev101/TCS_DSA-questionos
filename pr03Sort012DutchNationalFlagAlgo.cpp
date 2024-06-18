@@ -3,6 +3,20 @@
 
 using namespace std;
 
+//!     Sort 1s and 0s
+void sort01(vector<int>&arr){
+
+    // int size= sizeof(arr)/sizeof(arr[0]);
+    int low=0,high=arr.size()-1;
+    while(low<high){
+        if(arr[low]==1){
+            swap(arr[low],arr[high]);
+            high--;
+        }
+    }
+}
+
+
 //!     Dutch national flag algorithm
 
 void sort012(vector<int>& arr){
