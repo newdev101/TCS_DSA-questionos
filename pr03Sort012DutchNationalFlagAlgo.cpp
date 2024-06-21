@@ -13,6 +13,7 @@ void sort01(vector<int>&arr){
             swap(arr[low],arr[high]);
             high--;
         }
+        else low++;
     }
 }
 

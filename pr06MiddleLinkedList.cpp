@@ -48,7 +48,7 @@ Node* middle1(Node* &head){
 Node* middle2(Node* &head){
     Node* slow=head;
     Node* fast=head;
-    while (head!=NULL && head->next!=NULL)
+    while (fast!=NULL && fast->next!=NULL)
     {
         slow=slow->next;
         fast=fast->next->next;
